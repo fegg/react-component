@@ -12,6 +12,7 @@ export default props => {
   } = { ...props };
 
   const isActive = isOpen ? 'active' : '';
+  const itemClass = optionSelected === i ? 'selected item' : 'item';
 
   return (
     <div className="ui-dropDown">
@@ -20,7 +21,7 @@ export default props => {
         {data.map((item, i) => {
           return (
             <li key={i}
-              className={optionSelected === i ? 'selected item' : 'item'}
+              className={itemClass}
               onClick={() => onSelect(i)}>
               {item}
             </li>
