@@ -12,7 +12,7 @@ class App extends Component {
 
     this.state = {
       optionSelected: 1,
-      data: ['卢林', '素素', '豪豪']
+      data: ['卢林', '龙龙', '菜锅']
     };
   }
 
