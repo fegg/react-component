@@ -1,0 +1,65 @@
+/* layout 相关 */
+$width: 200px;
+$currentHeight: 32px;
+$itemHeight: 32px;
+
+/* font 相关 */
+$fontSize: 14px;
+$textIndent: 1em;
+
+/* color 相关 */
+$currentFontColor: #fff;
+$currentBgColor: #434343;
+$selectedFontColor: #fff;
+$hoverFontColor: #333;
+$listBgColor: #F5F2EF;
+$itemColor: #333;
+$selectedBgColor: #009CD5;
+$hoverBgColor: #F7F7F7;
+
+.ui-dropDown {
+  width: $width;
+
+  /* reset */
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .current {
+    cursor: pointer;
+    width: 100%;
+    height: $currentHeight;
+    line-height: $currentHeight;
+    text-indent: $textIndent;
+    color: $currentFontColor;
+    font-size: $fontSize;
+    background: $currentBgColor;
+  }
+
+  .list {
+    display: none;
+    background: $listBgColor;
+    &.active {
+      display: block;
+    }
+  }
+
+  .item {
+    cursor: pointer;
+    height: $itemHeight;
+    line-height: $itemHeight;
+    color: $itemColor;
+    font-size: $fontSize;
+    text-indent: $textIndent;
+    &:hover {
+      color: $hoverFontColor;
+      background: $hoverBgColor;
+    }
+    &.selected {
+      color: $selectedFontColor;
+      background: $selectedBgColor;
+    }
+  }
+}
