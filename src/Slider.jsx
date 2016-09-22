@@ -66,7 +66,7 @@ class Slider extends Component {
         return false;
       }
 
-      const newData = const newData = this.changeData(true);
+      const newData = this.changeData(true);
       this.setState({
         current: current + 1,
         data: newData
