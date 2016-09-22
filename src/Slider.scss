@@ -1,0 +1,43 @@
+.ui-slider {
+  position: relative;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .list {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    background: red;
+    transition: all 1s;
+  }
+}
+
+.ui-sliderArrows {
+  .arrow {
+    cursor: pointer;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -25px;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+}

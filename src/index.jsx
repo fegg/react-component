@@ -6,6 +6,7 @@ import DropDown from './DropDown';
 const EnhanceDropDown = enhance(DropDown);
 
 import Tabs from './Tabs';
+import Slider from './Slider';
 
 class App extends Component {
   constructor () {
@@ -45,6 +46,10 @@ class App extends Component {
             <a href="http://www.60sky.com">我的个人博客</a>
           </div>
         </Tabs>
+
+        <hr/>
+
+        <Slider width={500} height={500} />
       </div>
     );
   }

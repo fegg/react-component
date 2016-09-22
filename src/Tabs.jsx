@@ -62,4 +62,8 @@ class Tabs extends Component {
   }
 }
 
+Tabs.defaultProps = {
+  tabActiveIndex: 0
+};
+
 export default Tabs;
