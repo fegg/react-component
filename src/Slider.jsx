@@ -66,21 +66,13 @@ class Slider extends Component {
         return false;
       }
 
-      const newData = this.changeData(true);
-      this.setState({
-        current: current + 1,
-        data: newData
-      });
+      this.changeData(true);
     } else if (id < 0) { // left
       if(current <= 0) {
         return false;
       }
 
-      const newData = this.changeData(false);
-      this.setState({
-        current: current - 1,
-        data: newData
-      });
+      this.changeData(false);
     }
   }
 
@@ -93,11 +85,16 @@ class Slider extends Component {
   }
 
   changeData(isAdd) {
-    return data.map((d, i) => {
+    const newData = data.map((d, i) => {
       return {
         id: isAdd ? d.id + 1 : d.id - 1,
         content: d.content
       };
+    });
+
+    this.setState({
+      current: isAdd ? current + 1 : current - 1,
+      data: newData
     });
   }
 
