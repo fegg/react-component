@@ -1,0 +1,66 @@
+.ui-datePickerHeader {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: #ff6666;
+  position: relative;
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    &:hover {
+      border-radius: 15px;
+      background: #cc5252;
+    }
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .icon-prev,
+  .icon-next {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-top: 10px;
+  }
+
+  .icon-prev {
+    background: url("./images/ui_datePicker/prev.png") 0 0 no-repeat;
+  }
+
+  .icon-next {
+    background: url("./images/ui_datePicker/next.png") 0 0 no-repeat;
+  }
+
+  .current {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  .current_text {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 45px;
+    &:hover {
+      border-radius: 20px;
+      background: #cc5252;
+    }
+  }
+}
